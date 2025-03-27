@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Project</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <section>
+        <h1>edit project</h1>
+        <div class="container">
+            <form id="editProjectForm" onsubmit="handleProjectEdit(event)">
+                <div class="form-group">
+                    <label for="projectName">Project Name</label>
+                    <input type="text" id="projectName" name="projectName">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Notes</label>
+                    <textarea id="description" name="description"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="startDate">Start Date</label>
+                    <input type="date" id="startDate" name="startDate">
+                </div>
+
+                <div class="form-group">
+                    <label for="endDate">End Date</label>
+                    <input type="date" id="endDate" name="endDate">
+                </div>
+
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <select id="status" name="status">
+                        <option value="Not Started">Not Started</option>
+                        <option value="In Progress">In Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="customerName">Customer Name</label>
+                    <select name="Customers" id="customers"></select>
+                </div>
+
+                <button type="submit">Save Changes</button>
+                <a href="list-project.html" class="return-button">Cancel</a>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script>
+            document.addEventListener('DOMContentLoaded', populateProjectEditForm);
+    </script>
+</body>
+</html>
