@@ -1,9 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{7C15EA23-8B69-4A56-8AA4-73D570099386}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2EC5CAC0-0D11-4E8B-98B6-FADBC2EB536D} = {2EC5CAC0-0D11-4E8B-98B6-FADBC2EB536D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{1658D74D-732D-41F2-8CAD-52DCCA85EA64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{2EC5CAC0-0D11-4E8B-98B6-FADBC2EB536D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +22,14 @@ Global
 		{7C15EA23-8B69-4A56-8AA4-73D570099386}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C15EA23-8B69-4A56-8AA4-73D570099386}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C15EA23-8B69-4A56-8AA4-73D570099386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1658D74D-732D-41F2-8CAD-52DCCA85EA64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1658D74D-732D-41F2-8CAD-52DCCA85EA64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1658D74D-732D-41F2-8CAD-52DCCA85EA64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1658D74D-732D-41F2-8CAD-52DCCA85EA64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EC5CAC0-0D11-4E8B-98B6-FADBC2EB536D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EC5CAC0-0D11-4E8B-98B6-FADBC2EB536D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EC5CAC0-0D11-4E8B-98B6-FADBC2EB536D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EC5CAC0-0D11-4E8B-98B6-FADBC2EB536D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
