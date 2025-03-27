@@ -1,1 +1,4 @@
 .vs/
+# Ignore local database files
+*.mdf
+*.ldf
